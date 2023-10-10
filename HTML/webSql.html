@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../SCRIPTs/jQuery-3.1.1.min.js"></script>
+    <script src="../SCRIPTs/webSql.js"></script>
+    <link href="../CSS/webSql.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="formDiv">
+            <div class="workstate">webSql Storage Is Active</div>
+            <input type="text" placeholder="Enter Your Name" id="name" required="required" /><br>
+
+            <input type="tel" placeholder="Enter Mobile Num 01--" id="phone"><br>
+
+            <input placeholder="Date Of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="bdate" /><br>
+            <div id="drop-area">
+                <input type="file" id="file-input">
+                <p>Drop an image here to upload</p>
+            </div>
+
+            <button onclick="addContact()" id="saveBtn">Save</button>
+        </div>
+
+
+        <table id="contacts">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Birthdate</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

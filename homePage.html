@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="SCRIPTs/jQuery-3.1.1.min.js"></script>
+    <script src="SCRIPTs/homePage.js"></script>
+    <link href="CSS/homePage.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <div id="maindiv">
+        <aside id="menu">
+            <!-- <h2>Select Storage</h2> -->
+            <hr />
+            <a id="hm" class="active" href="#home"><span></span><span></span><span></span><span></span>Home</a><hr />
+            <a id="webs" href="#section1"><span></span><span></span><span></span><span></span>Web SQL</a><hr />
+            <a id="ind" href="#section2"><span></span><span></span><span></span><span></span>IndexedDB</a><hr />
+            <a id="loc" href="#section3"><span></span><span></span><span></span><span></span>Local Storage</a><hr />
+            <a id="sess" href="#section4"><span></span><span></span><span></span><span></span>Session Storage</a><hr />
+
+
+
+
+        </aside>
+
+    <div id="mainbody">
+        <section id="home" style="width: 100%; height: 100vh;">
+            <iframe src="HTML/id.html"></iframe>
+        </section>
+        <section id="section4">
+            <iframe src="HTML/sessionStorage.html" ></iframe>
+        </section>
+        <section id="section3">
+            <iframe src="HTML/localStorage.html"></iframe>
+        </section>
+        <section id="section2">
+            <iframe src="HTML/indexedDB.html"></iframe>
+        </section>
+        <section id="section1">
+            <iframe src="HTML/webSql.html" ></iframe>
+        </section> 
+
+    </div>
+    </div>
+
+</body>
+</html>

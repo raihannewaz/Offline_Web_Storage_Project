@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../SCRIPTs/jQuery-3.1.1.min.js"></script>
+    <script src="../SCRIPTs/indexedDB.js"></script>
+    <link href="../CSS/indexedDB.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="formDiv">
+                <div class="workstate">IndexedDB Storage Is Active</div>
+                <input type="text" placeholder="Enter Your Name" id="name" required="required" /><br>
+
+                <input type="email" placeholder="Enter Your Email" id="email" /><br>
+
+
+                <input type="tel" placeholder="Enter Mobile Num 01--" id="phone"><br>
+
+                <input placeholder="Date Of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"
+                    id="bdate" /><br>
+
+
+                <div class="box">Gender
+                    <input type="radio" name="gender" id="gender" value="Male" />Male
+                    <input type="radio" name="gender" id="gender" value="Female" />Female
+                </div><br>
+
+
+                  <div id="drop-area">
+                    <input type="file" id="file-input">
+                    <p>Drop an image here to upload</p>
+                  </div>
+
+
+                <button id="saveBtn">Save</button>
+        </div>
+
+        <table id="contacts">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Birthdate</th>
+                    <th>Gender</th>
+                    <th>Image</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
